@@ -1,0 +1,29 @@
+// 1
+-- do
+([0-9]{5}).  ([0-9]{5})
+SUBSTITUTE [$1,$2],
+
+// 2
+-- do
+ (whitespace)
+SUBSTITUTE ,
+-- and do
+^(.*)$
+SUBSTITUTE [$1],
+
+// 3_1
+-- do
+mul\(([0-9]*,[0-9]*)\)
+LIST [$1],
+
+// 3_2
+-- do
+mul\(([0-9]*,[0-9]*)\)|(do\(\))|(don't\(\))
+LIST [$1],
+-- and do
+Prettier and remove [] and ""
+
+// 4
+-- do
+^(.*)$
+SUBSTITUTE "$1",
