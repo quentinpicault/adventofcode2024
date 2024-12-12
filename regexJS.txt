@@ -1,3 +1,5 @@
+// https://regex101.com/
+// Flavor: ECMAScript
 // 1
 -- do
 ([0-9]{5}).  ([0-9]{5})
@@ -27,3 +29,11 @@ Prettier and remove [] and ""
 -- do
 ^(.*)$
 SUBSTITUTE "$1",
+
+// 5
+-- do (on first part)
+^([0-9]*)\|([0-9]*)$
+SUBSTITUTE [$1,$2],
+-- and do (on second part)
+^(.*)$
+SUBSTITUTE [$1],

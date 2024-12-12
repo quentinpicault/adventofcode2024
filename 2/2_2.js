@@ -1,7 +1,7 @@
 import file from "./2.json" with { type: "json" };
 import * as _ from "https://deno.land/x/lodash@4.17.15-es/lodash.js";
 
-const data = file.data;
+const { data } = file;
 const result = _.reduce(data, (sum, report) => {
   let dampered = false;
   for (let i = 0; i < report.length; i++) {

@@ -18,7 +18,7 @@ const testLetter = (x, y) => {
   return data[x][y];
 };
 
-const data = file.data;
+const { data } = file;
 let result = 0;
 for (let i = 0; i < data.length; i++) {
   for (let j = 0; j < data[0].length; j++) {
