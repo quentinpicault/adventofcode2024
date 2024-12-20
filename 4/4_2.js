@@ -20,8 +20,9 @@ const cross = {
 };
 
 const testLetter = (x, y) => {
-  if (x < 0 || x > data.length || y < 0 || y > data[0].length) return "Z";
-  if (data[x] === undefined) return "Z";
+  if (x < 0 || x > data.length - 1 || y < 0 || y > data[0].length - 1) {
+    return "Z";
+  }
   return data[x][y];
 };
 

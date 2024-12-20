@@ -37,3 +37,11 @@ SUBSTITUTE [$1,$2],
 -- and do (on second part)
 ^(.*)$
 SUBSTITUTE [$1],
+
+// 6
+-- do
+^(.*)$
+SUBSTITUTE [$1],
+-- and do
+([\.#\^])
+SUBSTITUTE "$1",
