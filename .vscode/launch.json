@@ -11,7 +11,7 @@
       "program": "${file}",
       "cwd": "${workspaceFolder}",
       "env": {},
-      "runtimeExecutable": "/Users/qpicault/.deno/bin/deno",
+      "runtimeExecutable": "deno",
       "runtimeArgs": [
         "run",
         "--unstable",
